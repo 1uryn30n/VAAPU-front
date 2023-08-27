@@ -1,11 +1,19 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+//menu
 
-signUpButton.addEventListener('click', () => {
-    container.classList.add("right-panel-active");
-});
+let menu = document.querySelector('.menu-icon');
+let navbar = document.querySelector('.navbar');
 
-signInButton.addEventListener('click', () => {
-    container.classList.remove("right-panel-active");
-});
+menu.onclick = () => {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('move');
+    carrinho.classList.remove('active');
+}
+ // carrinho verificar 
+
+ let carrinho = document.querySelector('.cart');
+
+ document.querySelector('#cart-icon').onclick =() => {
+    carrinho.classList.toggle('active');
+    navbar.classList.remove('active');
+    menu.classList.remove('move');
+}
