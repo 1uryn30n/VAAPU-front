@@ -20,6 +20,9 @@
 img{
     width:100%;
 }
+section{
+    padding: 4rem 0 3rem;
+}
 body{
     color: var(--text-color);
 }
@@ -54,7 +57,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:16px 0;
+    padding:3px 3px;
+    background: var(--bg-color);
 
 }
 .logo{
@@ -278,4 +282,106 @@ total span{
 .login-form form .btn:hover{
     
     background: var(--hover-color);
+}
+/**home*/
+.home{
+    position: relative;
+    min-height: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size: 2.4rem;
+}
+.home-text h1 span{
+    color: var(--main-color);
+
+}
+.home-text p{
+    margin: 1rem 0 1.8rem;
+}
+.home-img img{
+    width: 400px;
+
+}
+.home-img{
+    position: relative;
+}
+.home-img::after{
+    content: '';
+    height: 215px;
+    width: 520px;
+    background: var(--light-color);
+    position: absolute;
+    bottom: 05px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.heading a{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.heading a:hover{
+    
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+/*populares*/
+.popular-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 2rem;
+}
+.box{
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 0.5rem;
+    display: grid;
+    row-gap: 0.5rem;
+
+}
+.box img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+
+}
+.box-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.title-price h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.title-price span{
+    font-weight: 500;
+}
+.box-text .bx{
+    padding: 10px;
+    font-size: 20px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5rem;
+}
+.box-text .bx:hover{
+    background: var(--hover-color)
+    ;
 }
