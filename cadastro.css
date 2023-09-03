@@ -38,6 +38,7 @@ body{
     font-size: 1rem;
     font-weight: 500;
     border-radius: 0.5rem;
+    cursor: pointer;
 
 
 }
@@ -52,13 +53,15 @@ header{
     left: 0;
     width: 100%;
     z-index: 100;
+    background-color: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0  4% 15% / 10%);
+
 }
 .nav{
     display: flex;
     align-items: center;
     justify-content: center;
     padding:3px 3px;
-    background: var(--bg-color);
 
 }
 .logo{
@@ -200,19 +203,20 @@ header{
     
 }
 .cart-box .bx:hover{
-    color: var(--main-color);
+    color: rgb(180, 32, 32);
 }
 .total{
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
 
 }
 .total h3{
     font-size: 1rem;
 
 }
-total span{
+.total span{
     font-weight: 500;
 
 }
